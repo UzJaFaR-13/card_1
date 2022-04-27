@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2px;
+    background: rgba(40, 48, 54, 0.6);
+}
+
+.box {
+    margin: 25px;
+    Width: 392px;
+    Height: 294px;
+    background: #1E252B;
+    padding: 33px;
+    border-radius: 15px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.header__p1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.header__p2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(255, 165, 55, 0.55);
+}
+
+.main__p1 {
+    margin-top: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 188% */
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+i {
+    color: rgba(255, 255, 255, 0.38);
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.footer__p1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+@media (max-width:1700px) {
+    body {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:424px) {
+    body {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        margin: 15px;
+        Width: 352px;
+        Height: 254px;
+        background: #1E252B;
+        padding: 23px;
+        border-radius: 15px;
+    }
+}
